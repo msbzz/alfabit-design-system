@@ -4,7 +4,13 @@ type ButtonProps={
 
 
 const Button =({children,className}:ButtonProps) =>{
- return <button  className={`${className}`}>
+ return <button  className={`bg-[#2D5BFF] 
+    rounded-[8px] 
+    px-[32px] 
+    py-[12px]
+    text-white
+    border-spacing-0
+] ${className}`}>
     {children}
     </button> 
 }

@@ -1,18 +1,27 @@
-export type ButtonProps={
-    children :React.ReactNode;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>
+import React from "react";
 
+export type ButtonProps = {
+  children: React.ReactNode;
+  /**
+   * Classe CSS adicional para estilização personalizada
+   */
+  className?: string;
+  /**
+   * Callback acionado ao clicar no botão
+   */
+  onClick?: () => void;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button =({children,className}:ButtonProps) =>{
- return <button  className={`bg-[#2D5BFF] 
-    rounded-[8px] 
-    px-[32px] 
-    py-[12px]
-    text-white
-    border-spacing-0
-] ${className}`}>
-    {children}
-    </button> 
-}
+const Button: React.FC<ButtonProps> = ({ children, className, onClick, ...props }) => {
+  return (
+    <button
+      onClick={onClick}
+      className={`rounded-[8px] px-[32px] py-[12px] text-white bg-[#2D5BFF] border-spacing-0 ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

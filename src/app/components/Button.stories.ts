@@ -1,18 +1,35 @@
- 
 import { Meta, StoryObj } from "@storybook/react";
-import Button, { ButtonProps }  from "./Button"; 
+import Button, { ButtonProps } from "./Button";
 
 const meta: Meta<ButtonProps> = {
-    title:'Button',
-    tags:['autodocs'],
-    component:Button,
-    argTypes:{}
-}
+  title: "Components/Button",
+  component: Button,
+  argTypes: {
+    children: { control: "text" },
+    className: { control: "text" },
+    onClick: { action: "clicked" },
+  },
+};
 
-export default meta
+export default meta;
 
-export const Primary:StoryObj<typeof Button> = {
-    args:{
-      children:'Botão'  
-    }
-}
+export const Default: StoryObj<ButtonProps> = {
+  args: {
+    children: "Button",
+    className: "",
+  },
+};
+
+export const Primary: StoryObj<ButtonProps> = {
+  args: {
+    children: "Primary Button",
+    className: "bg-blue-500",
+  },
+};
+
+export const WithEvent: StoryObj<ButtonProps> = {
+  args: {
+    children: "Click Me",
+    onClick: () => alert("Button clicked!"),
+  },
+};

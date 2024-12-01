@@ -16,7 +16,12 @@ const Button: React.FC<ButtonProps> = ({ children, className, onClick, ...props 
   return (
     <button
       onClick={onClick}
-      className={`rounded-[8px] px-[32px] py-[12px] text-white bg-[#2D5BFF] border-spacing-0 ${className}`}
+      className={`rounded-[8px] 
+        px-[32px] 
+        py-[12px] 
+        text-white 
+        bg-primary theme-violet 
+        border-spacing-0 ${className}`}
       {...props}
     >
       {children}

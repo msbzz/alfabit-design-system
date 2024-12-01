@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --example: #f58912;
-  --example-2: #555555;
+
+@layer base {
+  :root {
+    --example: #f58912;
+    --example-2: #555555;
+  
+    --primary : #2D5BFF;
+  }
+  
+  .theme-violet{
+    --primary : #4C2881
+  }
 }
+
+
+
+
+
 
 /* :root {
   --background: #ffffff;

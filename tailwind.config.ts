@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       colors: { 
+        primary: 'var(--primary)',
         example:'var(--example)', 
         'example-2':'var(--example-2)',  
       },

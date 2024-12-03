@@ -27,6 +27,14 @@ export const Primary: StoryObj<ButtonProps> = {
   },
 };
 
+export const ThemeViolete: StoryObj<ButtonProps> = {
+  args: {
+    children: "Violet Button",
+    className: "theme-violet",
+  },
+};
+
+
 export const WithEvent: StoryObj<ButtonProps> = {
   args: {
     children: "Click Me",

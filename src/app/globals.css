@@ -8,11 +8,11 @@
     --example: #f58912;
     --example-2: #555555;
   
-    --primary : #2D5BFF;
+    --primary : rgb(45, 91, 255);
   }
   
   .theme-violet{
-    --primary : #4C2881
+    --primary : rgb(76,40,129);
   }
 }
 

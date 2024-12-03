@@ -5,25 +5,20 @@ const meta: Meta<ButtonProps> = {
   title: "Components/Button",
   component: Button,
   argTypes: {
-    children: { control: "text" },
-    className: { control: "text" },
+    children: { type: "string" },
+    className: { type: "string" },
     onClick: { action: "clicked" },
+    disabled:{type:"boolean"},
   },
 };
 
 export default meta;
 
-export const Default: StoryObj<ButtonProps> = {
-  args: {
-    children: "Button",
-    className: "",
-  },
-};
+ 
 
 export const Primary: StoryObj<ButtonProps> = {
   args: {
     children: "Primary Button",
-    className: "bg-blue-500",
   },
 };
 

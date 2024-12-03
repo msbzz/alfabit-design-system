@@ -47,6 +47,8 @@ export default {
     },        
     extend: {
       colors: {
+        example1:'var(--example-1)',
+        example: 'rgba(var(--example-2), <alpha-value>)',
         primary: 'rgba(var(--primary), <alpha-value>)',
         secondary: 'rgba(var(--secondary), <alpha-value>)',
         tertiary: 'rgba(var(--tertiary), <alpha-value>)',

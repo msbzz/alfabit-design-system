@@ -16,12 +16,14 @@ const Button: React.FC<ButtonProps> = ({ children, className, onClick, ...props 
   return (
     <button
       onClick={onClick}
-      className={`rounded-[8px] 
+      className={`rounded-md 
         px-[32px] 
         py-[12px] 
         text-white 
-        bg-primary/50
-        shadow-lg hover:shadow-focus 
+        bg-primary
+        hover:bg-primary/80
+        active:shadow-lg
+        transition-all duration-200 
         border-spacing-0 ${className}`}
       {...props}
     >

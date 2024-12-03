@@ -18,8 +18,8 @@
 
 @layer base {
   :root {
-    --example: #f58912;
-    --example-2: #555555;
+    --example-1: #fff;
+    --example-2: 85,85,85;
   
     --primary-1 : rgb(45, 91, 255);
    

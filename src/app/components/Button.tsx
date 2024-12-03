@@ -20,7 +20,8 @@ const Button: React.FC<ButtonProps> = ({ children, className, onClick, ...props 
         px-[32px] 
         py-[12px] 
         text-white 
-        bg-primary 
+        bg-primary/50
+        shadow-lg hover:shadow-focus 
         border-spacing-0 ${className}`}
       {...props}
     >

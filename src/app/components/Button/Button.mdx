@@ -1,0 +1,26 @@
+import { Meta, Canvas } from "@storybook/blocks";
+import { Button } from "./Button";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+O botão é um dos componentes principais utilizado para interações em nosso sistema.
+
+ 
+
+<Canvas>
+### Primário
+<Canvas of={ButtonStories.Primary} />
+### Desabilitado
+<Canvas of={ButtonStories.Disabled} />
+### Secundário
+<Canvas of={ButtonStories.Secondary} />
+### Secundário Desabilitado
+<Canvas of={ButtonStories.SecondaryDisabled} />
+### Terciário
+<Canvas of={ButtonStories.Tertiary} />
+### Terciário Desabilitado
+<Canvas of={ButtonStories.TertiaryDisabled} />>
+</Canvas>
